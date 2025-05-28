@@ -184,6 +184,7 @@ button:disabled {
   padding: 15px;
   background: #e8f5e9;
   border-radius: 8px;
+  color: black;
 }
 
 .tag {
