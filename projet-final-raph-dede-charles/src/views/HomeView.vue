@@ -1,7 +1,10 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <script setup lang="ts">
 import TheWelcome from '../components/TheWelcome.vue'
 =======
+=======
+>>>>>>> Stashed changes
 <script setup>
 import { ref } from 'vue'
 import UrlForm from '@/components/UrlForm.vue'
@@ -19,6 +22,9 @@ function handleSubmit(formData) {
   //   error.value = e.message
   // }
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 </script>
 

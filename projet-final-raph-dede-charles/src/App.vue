@@ -8,6 +8,7 @@ import NavigationBar from '@/components/NavigationBar.vue'
     <router-view />
   </main>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 </template>
 
 <style scoped>
@@ -82,6 +83,9 @@ button:disabled {
   font-size: 0.8em;
 }
 </style>
+=======
+</template>
+>>>>>>> Stashed changes
 =======
 </template>
 >>>>>>> Stashed changes
