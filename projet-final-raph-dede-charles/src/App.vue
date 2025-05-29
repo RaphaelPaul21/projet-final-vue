@@ -1,91 +1,85 @@
 <script setup>
-import NavigationBar from '@/components/NavigationBar.vue'
+import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <NavigationBar />
-  <main class="container mx-auto p-4">
-    <router-view />
-  </main>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+  <header>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
 </template>
 
 <style scoped>
-.url-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #f5f5f5;
-  border-radius: 8px;
+header {
+  line-height: 1.5;
+  max-height: 100vh;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
+.logo {
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin: 0 auto 2rem;
 }
 
-input {
+nav {
   width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.form-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+nav a.router-link-exact-active {
+  color: var(--color-text);
 }
 
-button {
-  padding: 10px 15px;
-  background: #42b983;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
 }
 
-button.secondary {
-  background: #ddd;
-  color: #333;
-}
-
-button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-.error-message {
-  color: #ff4444;
-  margin-top: 20px;
-}
-
-.result-container {
-  margin-top: 30px;
-  padding: 15px;
-  background: #e8f5e9;
-  border-radius: 8px;
-}
-
-.tag {
+nav a {
   display: inline-block;
-  margin: 2px 5px;
-  padding: 3px 8px;
-  background: #bbdefb;
-  border-radius: 12px;
-  font-size: 0.8em;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    text-align: left;
+    margin-left: -1rem;
+    font-size: 1rem;
+
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
 }
 </style>
-=======
-</template>
->>>>>>> Stashed changes
-=======
-</template>
->>>>>>> Stashed changes
